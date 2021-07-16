@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>JAMFIELDS | Contacto</title>
+
+	<!-- Load miSlider -->
+	<link href="css/mislider.css" rel="stylesheet">
+	<link href="css/mislider-skin-cameo.css" rel="stylesheet">
+
+	<!-- Apply other styles -->
+    <link href='http://fonts.googleapis.com/css2?family=Roboto+Condensed:400|Roboto:500' rel='stylesheet' >
+
+	<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet" >
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" > 
+
+	<link rel="stylesheet" href="css/font-awesome.css">
+    <link href="css/styles.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+	<header class="header-top">
+		<div>
+			<h1 id="logo"><a href="index.html">JAMFIELDS</a></h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="tienda.html">Tienda</a></li>
+					<li><a class="active" href="contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+<!--
+		<div class="home-logo-grande">
+			 <img src="img/logo-grande.png" alt="Logo grande"> 
+		</div>
+-->
+<div class="container-form-contacto">
+    <div id="container-form-contacto">
+        <div class="form-contacto">
+                <h2>Dejános tu mensaje</h2>
+
+            <form action="#" method="POST">
+
+                    <div class="home-form-dados">
+                        <div>
+                            <label for="nombre"><span>Nombre</span></label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Ej: Victor Valle..." >
+                        </div>
+
+                        <div>
+                            <label for="email"><span>E-mail</span></label>
+                            <input type="email" name="email" id="email" placeholder="Ej. victorvalle@gmail.com" required>
+                        </div>
+                        <div>
+                            <label for="telefono"><span>Telefono</span></label>
+                            <input type="tel" name="telefono" id="telefono" placeholder="Ej. 11 6464 6464" required>
+                        </div>
+                    </div>
+
+                    <div class="mensaje">
+                        <label for="mensaje"><span>Escribí tu consulta</span></label>
+                        <textarea name="mensaje" id="mensaje" placeholder="Mensaje aquí..." maxlength="1000" required></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit" id="home-form-boton">enviar</button>
+                    </div>
+
+            </form>
+        </div>
+        <div class="contacto-right">
+            <div class="datos">
+               <ul>
+                   <li>jamfields_artesanal@gmail.com</li>
+                   <li>Lanus, Oeste</li>
+                   <li>Tel. 1134044537</li>
+                   <li>Lunes a Sabados de 10 a 19 hrs</li>
+               </ul>
+            </div>
+
+            <div class="mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9926692429485!2d-58.398188884770256!3d-34.60434688045928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaea670d4e67%3A0x2198c954311ad6d9!2sDa%20Vinci!5e0!3m2!1ses!2sar!4v1593834719121!5m2!1ses!2sar" width="500" height="300"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+
+	<aside class="redes-sociales">
+		<div>
+			<div class="redes-sociales-links">
+				<ul class="links">
+					<li><a href="https://www.instagram.com/jamfields.ar/" target="new"><i class="fa fa-instagram"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</aside>
+
+	<footer>
+<!--	<div class="home-boton-horizontal"></div>-->
+		<p>&copy;
+		<strong>Alumna</strong>: Eva Ferretti
+		<strong>Carrera</strong>: Diseño gráfico.
+		<strong>Comisión</strong>: DG3TN </p>
+		<p><strong>Mail</strong>: <a href="mailto:cristina.ferretti@davinci.edu.ar">cristina.ferretti@davinci.edu.ar</a></p>
+	</footer>
+</div>	<!-- cierre container -->	
+
+	<!-- Load jQuery -->
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.js"><\/script>')</script>
+
+    <script src="js/mislider.js"></script>
+    <script>
+        jQuery(function ($) {
+            var slider = $('.mis-stage').miSlider({
+                //  The height of the stage in px. Options: false or positive integer. false = height is calculated using maximum slide heights. Default: false
+                //stageHeight: 380,
+                //  Number of slides visible at one time. Options: false or positive integer. false = Fit as many as possible.  Default: 1
+                slidesOnStage: false,
+                //  The location of the current slide on the stage. Options: 'left', 'right', 'center'. Defualt: 'left'
+                slidePosition: 'center',
+                //  The slide to start on. Options: 'beg', 'mid', 'end' or slide number starting at 1 - '1','2','3', etc. Defualt: 'beg'
+                slideStart: 'mid',
+                //  The relative percentage scaling factor of the current slide - other slides are scaled down. Options: positive number 100 or higher. 100 = No scaling. Defualt: 100
+                slideScaling: 150,
+                //  The vertical offset of the slide center as a percentage of slide height. Options:  positive or negative number. Neg value = up. Pos value = down. 0 = No offset. Default: 0
+                offsetV: -5,
+                //  Center slide contents vertically - Boolean. Default: false
+                centerV: true,
+                //  Opacity of the prev and next button navigation when not transitioning. Options: Number between 0 and 1. 0 (transparent) - 1 (opaque). Default: .5
+                navButtonsOpacity: 1
+            });
+        });
+    </script>
+
+
+    <!-- google-code-prettify -->
+	<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+	<script>$(function() { $('pre').addClass('prettyprint');})</script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,549 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Lato', sans-serif;
+	background-color: #f8f3ea;
+}
+
+
+.home-img-izquierda {
+	background: url("../img/naranja3.jpg") no-repeat;
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 45%;
+    height: 100%;
+    z-index: -1;
+}
+
+.header-top {
+	width: 95%;
+    height: 100px;
+    margin: auto;
+    position: relative;
+    z-index: 12;
+
+}
+
+.header-top div {
+	background-color: #ccb5a2;
+	position: fixed;
+	width: 95%;
+	height: 70px;
+	margin-top: 30px;
+	border-radius: 50px;
+	display: inline-block;
+	z-index: 1000;
+
+}
+
+.header-top div h1 {
+	font-family: 'Frank Ruhl Libre', serif;
+}
+
+#logo {
+	background: url("../img/logo-tostada.png") no-repeat;
+	margin: 10px 0 5px 30px;
+	position: absolute;
+	padding: 0px 0 0 30px;
+	width: 50px;
+	height: 50px;
+}
+
+#logo a {
+	margin-left: 30px;
+	margin-top: 9px;
+	text-decoration: none;
+	display: block;
+	color: #FFF;
+
+}
+
+nav {
+	float: right;
+	width: 900px;
+	display: inline-block;
+	padding-top: 25px;
+	padding-right: 40px;
+
+}
+nav ul {
+	display: inline-block;
+	float: right;
+	position: relative;
+
+}
+
+nav ul li {
+	display: inline-block;
+	padding-left: 20px;
+
+}
+
+nav ul li a {
+	color: #876e57;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+nav ul li a:hover {
+	color: #FFF;
+}
+
+.active {
+	color: #FFF;
+}
+
+.container {
+	width: 983px;
+	display: inline-block;
+	float: right;
+	margin-right: 100px;
+	background-color: #f8f3ea;
+}
+
+main {
+	font-family: 'Lato', sans-serif;
+	line-height: 30px;
+	color: #876e57;
+	width: 983px;
+}
+
+.home-logo-grande {
+	background: url("../img/logo-grande.png");
+	background-repeat: no-repeat;
+	width: 400px;
+	height: 400px;
+	margin-left: 630px;
+	margin-top: 100px;
+	position: relative;
+}
+
+
+.home-seccion {
+	width: 650px;
+	padding: 30px 0 80px 50px;
+	position: relative; 
+	color: #876e57;
+}
+
+
+.home-seccion a {
+	border: 1px solid #886e56;
+	border-radius: 50px;
+	padding: 15px 30px;
+	margin-top: 40px;
+	display: inline-block;
+	text-decoration: none;
+	font-weight: 900;
+	color: #886e56;
+	background: #f8f3ea;
+}
+
+.home-seccion h2 {
+	width: 650px;
+	font-size: 30px; /* texto animado */
+}
+
+.home-seccion  p {
+	font-size: 20px;
+	padding-top: 30px;
+}
+
+.home-seccion h2 span {
+    position:absolute;
+    right:0;
+    width: 0;
+    background: #f8f3ea; 
+    animation: escribir 3s steps(35) infinite alternate;
+    padding-left: 10px;
+}
+
+@keyframes escribir {
+    from { width: 45%; }
+    to { width: -12%; }
+}
+
+.home-seccion-nosotros {
+	width: 500px;
+	padding-left: 50px;
+}
+
+.home-seccion-nosotros h3 {
+	font-size: 25px;
+	padding-bottom: 20px;
+}
+
+.home-seccion-nosotros article {
+	margin: 20px 0;
+}
+
+.home-seccion-nosotros article:nth-child(2) {
+	margin-top: 60px;
+}
+
+.home-recetas {
+	width: 983px;
+	margin-top: 20px;
+	display: inline-block;
+	padding-left: 50px;
+}
+
+.home-img-recetas {
+    transition: transform .5s, filter 1.5s ease-in-out;
+    overflow: hidden;
+    width: 280px;
+    height: 320px;
+}
+.home-img-recetas  a img:hover {
+    transform: scale(1.1);
+    transition: transform .5s;
+    
+}
+
+.home-recetas h2 {
+	font-size: 30px;
+	padding-bottom: 30px;
+}
+#home-recetas {
+	display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
+#home-recetas figure figcaption {
+	width: 250px;
+	padding: 20px 10px 20px 10px;
+	line-height: 20px;
+}
+
+.home-boton-horizontal {
+	border-bottom: 1px solid #886e56;
+	width: 983px;
+	display: inline-block;
+	margin: 70px auto;
+    align-items: center;
+}
+
+#wrapper {
+	position: relative;
+}
+
+#wrapper h2 {
+	padding-left: 50px;
+	font-size: 30px;
+}
+
+/*formulario home*/
+.home-formulario-contacto{
+	width: 750px;
+	font-weight: 100;
+	display: inline-block;
+	font-family: 'Lato', sans-serif;
+	color: #876e57;
+	float: left;
+	margin-left: 50px;
+
+}
+
+.home-formulario-contacto h2{
+	font-size: 30px;
+	margin-left: 30px;
+	padding-bottom: 50px;
+}
+
+.home-formulario-contacto header {
+	display: inline-block;
+	padding-left: 20px;
+	
+}
+
+.home-formulario-contacto p {
+	font-family: 'Lato', sans-serif;
+	padding-bottom: 30px;
+	padding-left: 20px;
+	display: block;
+}
+
+form {
+	padding: 20px;
+	font-family: 'Lato', sans-serif;
+
+}
+
+label{
+    padding: 0px 10px ;
+	position: absolute;
+	margin-left: 30px;
+	font-size: 15px;
+	line-height: 1px;
+	color: #876e57;
+	font-weight: 800;
+	z-index: 100;
+}
+
+input{
+    display: block;
+    border-radius: 30px;
+    border: 1px solid #876e57;
+    padding: 20px;
+    background: #f8f3ea;
+    margin-bottom: 30px;
+    width: 470px;
+}
+
+
+/* quitar el borde por defecto de formulario */
+button, textarea, input:invalid {
+       box-shadow: none !important;
+       outline: none !important;
+}
+
+
+
+label span {
+	background: #f8f3ea;
+	padding: 10px 15px;
+}
+
+.home-form-datos {
+    float: left;
+}
+
+.home-form-datos div{
+    width: 470px;
+    margin: 0 20px 0 0;
+
+}
+
+textarea {
+	display: block;
+	margin: 15px 0;
+	padding: 20px;
+	border-radius: 20px;
+	border: 1px solid #876e57;
+	background: #f8f3ea;
+    zoom: 1;
+    width: 470px;
+    height: 200px;
+}
+
+#home-form-boton {
+	width: 180px;
+    height: 50px;    
+    margin-right: 10px;
+    border: 1px solid #876e57;  
+    border-radius: 50px; 
+    background-color: #f8f3ea;
+    color: #876e57;
+    text-transform: capitalize;
+    font-size: 17px; 
+    font-family: 'Lato', sans-serif; 
+    cursor: pointer;  
+}
+
+/*fin formulario home*/
+
+
+/*tienda*/
+.container-tienda main {
+    background: #f8f3ea;
+    z-index: 2;
+    width: 1200px;
+    margin: auto;
+}
+
+.tienda-frascos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    
+}
+#container-tienda h2{
+    text-align: center;
+    padding: 70px 0px 50px 0;
+    font-size: 30px;
+    color: #886e56;
+}
+.tienda-frascos article {
+    box-shadow:0 2px 8px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 255, 255, 0.1) inset;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.tienda-frascos article .img{
+    transition: transform .5s, filter 1.5s ease-in-out;
+    overflow: hidden;
+    width: 370px;
+    height: 370px;
+}
+.tienda-frascos article p:nth-child(2) {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/*scale*/
+.tienda-frascos article:hover img {
+    transform: scale(1.1);
+    transition: transform .5s;
+    
+}
+/*fin scale*/
+
+.tienda-frascos article h3 a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #886e56;
+}
+.tienda-frascos article h3 a:hover {
+    color: #ccb5a2;
+}
+
+.tienda-frascos article p {
+    color: #886e56;
+    padding: 20px 0 20px 0;
+    color: #886e56;
+}
+
+/*modal de gracias por tu compra*/
+#hidden-content-2 {
+    /* Custom styling */
+		max-width: 550px;
+		padding: 10px 30px 30px 30px;
+		border-radius: 4px;
+  
+    /* Custom transition - fade from top*/
+		opacity: 0;
+    transform: translateY(-50px);
+    transition: all .3s;
+	}
+
+	.fancybox-slide--complete #hidden-content-2 {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+/*fin de modal gracias por tu compra*/
+
+/*fin tienda */
+
+/*formulario de contacto */
+.container-form-contacto {
+    width: 1200px;
+    margin: auto;
+    background: #f8f3ea;
+/*    display: block;*/
+    padding-top: 30px;
+  
+/*    box-shadow:0 2px 8px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 255, 255, 0.1) inset;*/
+    
+}
+
+.form-contacto {
+    float: left;
+    margin-right: 150px;
+    display: inline-block;
+    float: left;
+    width: 500px;
+}
+
+.form-contacto h2 {
+/*    text-align: center;*/
+    padding: 30px 30px;
+    font-size: 30px;
+    color: #886e56;
+}
+
+.datos {
+   display: inline-block;
+   margin-top: 100px;
+    
+}
+
+.datos ul li {
+    list-style: none;
+    color: #886e56;
+}
+
+.contacto-right {
+    float: right;
+    width: 500px;
+    display: inline-block;
+}
+
+.mapa {
+    margin-top: 90px;
+}
+/*fin formulario de contacto*/
+
+/*redes sociales*/
+.redes-sociales{
+	text-align: center;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 100px;
+	border-left: 1px solid #886e56;
+	color: #000;
+	text-align: center;
+	display: inline-block;
+	padding-top: 800px;
+}
+
+.redes-sociales-links ul li {
+	list-style: none;
+}
+
+.redes-sociales-links ul li a i.fa {
+	color: #886e56; 
+	font-size: 1em;
+	line-height: 2.2em;
+	text-align: center;
+	transition: all 0.5s ease-in-out;
+	border-radius: 50%;
+	border: 2px solid #886e56; 
+	width: 40px;
+	height: 40px;
+}
+
+.redes-sociales-links ul li a i.fa:hover {
+	color: #886e56;
+	transform:scale(1.2);
+}
+
+footer{
+	width: 100%;
+	color: #876e57;
+	position: relative;
+	display: inline-block;
+	padding: 30px 0;
+    background: #f8f3ea;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+
+}
+footer p {
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 20px;
+	padding-left: 10px;
+}
+
+footer  p:nth-child(3) a {
+    text-decoration: none;
+}
+
+footer p:nth-child(2) a {
+    text-decoration: none;
+}
+
+
+
